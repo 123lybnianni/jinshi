@@ -452,7 +452,6 @@
 
     //ajax获取信息
 	function shisuan(){
-
             var params = getCommonParams(document.cookie);
 			params.class = "newCreditCustomerPricingCalculateQuery";
 			var listdypxx = replaceAll($(".content-wrapper-div #dypxxlist").text(),"抵押品信息：",",").replace(",","");
@@ -493,7 +492,6 @@
 				success:(r)=>{
 					if (r.status){
 						window.location.href = "shisuanjieguo.html?data=" + escape(JSON.stringify(r.result));
-
 					}else{
 						alert(r.message);
 					}

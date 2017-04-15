@@ -1,5 +1,5 @@
-
-var port = 'http://localhost:8081/rpm/servlet/PhoneServlet';
+﻿
+var port = 'http://192.168.31.145:8081/rpm/servlet/PhoneServlet';
 
 function setCookie(name,value,iDay){
     var str = name + '='+ JSON.stringify(value.result) +';path=/';

@@ -1,35 +1,35 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
+<!DOCTYPE html>
+<html>
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    
+
     <!-- [portable options] -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-        
+
     <title>存款价格发布</title>
-        
-    <!-- [loading stylesheets] -->    
-    <link type="text/css" rel="stylesheet" href="css/style.css" /> 
-    <link type="text/css" rel="stylesheet" href="css/portfolio-default.css" /> 
-    <link type="text/css" rel="stylesheet" href="css/portfolio-component.css" />  
-    
+
+    <!-- [loading stylesheets] -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/portfolio-default.css" />
+    <link type="text/css" rel="stylesheet" href="css/portfolio-component.css" />
+
     </head>
 
     <body>
 
     	<section id="page-wrapper">
-        
+
         	<section id="menu-wrapper">
-            	
+
                 <div id="menu-search">
                 	 <input id="menu-search-input-text" type="text" placeholder="搜索" />
 					         <input id="menu-search-input-submit" type="submit" value="" />
                 </div>
-            
+
                 <ul class="menu">
-                  
+
                     <li id="a-submenu-1" class="icon plus">
                         <a href="javascript:;">
                             <span class="menu-li-title">客户管理</span>
@@ -42,7 +42,7 @@
                                     <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="shouye.html">
                                     <span class="menu-li-title">派生承诺追踪</span>
@@ -58,23 +58,23 @@
                             </li>
 
                         </ul>
-                        
+
                     </li>
-                    
+
                     <li class="icon box"><!-- 公司贷款定价 -->
                         <a href="daikuanshisuan.html">
                           <span class="menu-li-title">对公款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-                    
+
                     <li class="icon info"><!-- 小微贷款定价 -->
                         <a href="gerendaikuan.html">
                           <span class="menu-li-title">个人贷款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-                    
+
                     <li class="icon book"><!--系统管理-->
                         <a href="cunkuandingjia.html">
                           <span class="menu-li-title">存款顶价</span>
@@ -90,25 +90,25 @@
                 </ul> <!-- .menu -->
 
             </section> <!-- #menu-wrapper -->
-        
+
         	<section id="content-wrapper">
-                	
+
                 <section id="header">
-                
+
                     <div id="header-left">
                         <a href="#" id="a-menu">
-                          <img src="img/icons/menu.png" alt="menu" /></a> 
+                          <img src="img/icons/menu.png" alt="menu" /></a>
                     </div>
                     <div id="header-title">
                         <h1>存款价格发布</h1>
                     </div>
-                    
+
                 </section> <!-- #header -->
-            
+
         	<section id="content">
-            
+
             <div class="wrapper">
-            <!----> 
+            <!---->
             	<div class="wrapper-div-form1c">
                   <h2>存款定价</h2>
                   <form action="#" method="get">
@@ -116,7 +116,7 @@
                       <label>
                        <span>&nbsp日&nbsp&nbsp&nbsp期&nbsp</span>&nbsp：<input id="meeting" type="date" value="2017-01-13"/></label></br>
                         <label id="lblSelect">
-                            <span>机&nbsp构&nbsp名&nbsp</span>：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                            <span>机&nbsp构&nbsp名&nbsp</span>：<select class="selectPointOfInterest" title="Select points of interest nearby">
                                 <option>沧融信商行财务部</option>
                                 <option>沧融信商行财务部</option>
                                 <option>沧融信商行财务部</option>
@@ -127,7 +127,7 @@
                         </label></br>
 
                          <label id="lblSelect">
-                          <span>条&nbsp&nbsp&nbsp&nbsp&nbsp线&nbsp</span>：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                          <span>条&nbsp&nbsp&nbsp&nbsp&nbsp线&nbsp</span>：<select class="selectPointOfInterest" title="Select points of interest nearby">
                               <option>---请选择---</option>
                               <option>---请选择---</option>
                               <option>---请选择---</option>
@@ -136,7 +136,7 @@
                           </select>
                           </label></br>
                       <label id="lblSelect">
-                      <span>产&nbsp&nbsp&nbsp&nbsp&nbsp品&nbsp</span>：<select id="selectPointOfInterest" title="Select points of interest nearby">
+                      <span>产&nbsp&nbsp&nbsp&nbsp&nbsp品&nbsp</span>：<select class="selectPointOfInterest" title="Select points of interest nearby">
                               <option>---请选择---</option>
                               <option>---请选择---</option>
                               <option>---请选择---</option>
@@ -153,17 +153,17 @@
             <!--
               这一块不要写东西，这是我要用的地方，谢谢！！！
             -->
-            <div class="wrapper-kong"></div> 
+            <div class="wrapper-kong"></div>
             </section> <!-- #content-wrapper -->
-            
+
     	</section> <!-- #page-wrapper -->
-         
-         <!-- [loading scripts] -->    
+
+         <!-- [loading scripts] -->
        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
        <script type="text/javascript" src="js/modernizr.custom.js"></script>
        <script type="text/javascript" src="js/grid.js"></script>
        <script type="text/javascript" src="js/main.js"></script>
-           
+
        <script>
            var $ = jQuery.noConflict();
                $(window).load(function() {
@@ -198,7 +198,7 @@
                         <p>存款定价</p>
                     </a>
                 </li>
-            </ul>    
+            </ul>
         </div>
     </body>
 </html>

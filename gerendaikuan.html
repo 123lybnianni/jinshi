@@ -1,20 +1,20 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
+<!DOCTYPE html>
+<html>
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
-    
+
     <!-- [portable options] -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-        
+
     <title>个人贷款定价</title>
-        
-    <!-- [loading stylesheets] -->    
-    <link type="text/css" rel="stylesheet" href="css/style.css" />   
-    
-    <!-- [loading scripts] -->   
-		
+
+    <!-- [loading stylesheets] -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- [loading scripts] -->
+
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
@@ -25,7 +25,7 @@
                     animation: "slide",
                     directionNav: true,
                     animationLoop: false,
-                    controlNav: false, 
+                    controlNav: false,
                     slideToStart: 1,
                     slideshow: true,
                     animationDuration: 300,
@@ -34,22 +34,22 @@
                     },
                 });
             });
-      </script>  
+      </script>
     </head>
 
     <body>
 
     	<section id="page-wrapper">
-        
+
         	<section id="menu-wrapper">
-            	
+
                 <div id="menu-search">
                 	<input id="menu-search-input-text" type="text" placeholder="搜索" />
 					<input id="menu-search-input-submit" type="submit" value="" />
                 </div>
-            
+
                 <ul class="menu">
-                  
+
                     <li id="a-submenu-1" class="icon plus">
                         <a href="javascript:;">
                             <span class="menu-li-title">客户管理</span>
@@ -62,7 +62,7 @@
                                     <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="shouye.html">
                                     <span class="menu-li-title">派生承诺追踪</span>
@@ -77,23 +77,23 @@
                                 </a>
                             </li>
                         </ul>
-                        
+
                     </li>
-                    
+
                     <li class="icon box"><!-- 公司贷款定价 -->
                         <a href="daikuanshisuan.html">
                           <span class="menu-li-title">对公款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-                    
+
                     <li class="icon info"><!-- 小微贷款定价 -->
                         <a href="gerendaikuan.html">
                           <span class="menu-li-title">个人贷款定价</span>
                           <img class="menu-li-arrow" src="img/icons/arrow-forward.png" alt="" />
                         </a>
                     </li>
-                    
+
                     <li class="icon book"><!--系统管理-->
                         <a href="cunkuandingjia.html">
                           <span class="menu-li-title">存款定价</span>
@@ -107,26 +107,26 @@
                         </a>
                     </li>
                 </ul> <!-- .menu -->
-                
+
             </section> <!-- #menu-wrapper -->
-        
+
         	<section id="content-wrapper">
-                	
+
                 <section id="header">
-                
+
                     <div id="header-left">
                         <a href="#" id="a-menu"><img src="img/icons/menu.png" alt="menu" /></a>
                     </div>
-                    
+
                     <div id="header-title">
                         <h1>个人贷款定价</h1>
                     </div>
-                    
-                    
+
+
                 </section> <!-- #header -->
-            
+
         	<section id="content">
-                
+
                 <div class="wrapper wrapper-divge">
                 <form action="#" method="get">
                     <div class="wrapper-div-form1">
@@ -138,10 +138,11 @@
                             </label></br>
                             <label>
                             客户名称&nbsp：<input type="text" id="khmc" value="" name="name" placeholder="客户名称*" required /></label></br>
-                            <label for="checkbox">
-                             性&nbsp&nbsp&nbsp&nbsp&nbsp别&nbsp&nbsp：<span>男</span><input type="checkbox" value="5337" id="checkbox" class="xuankuang" /></label>
+                            <label for="sex">
+                             性&nbsp&nbsp&nbsp&nbsp&nbsp别&nbsp&nbsp：<span>男</span><input type="radio" value="5337" id="checkbox" class="xuankuang" name="sex"/></label>
                              <label for="checkbox">
-                             <span>女</span><input type="checkbox" id="checkbox" value="5338" class="xuankuang" /></label></br>
+                             <span>女</span><input type="radio" id="checkbox" value="5338" class="xuankuang" name="sex"/>
+                             </label></br>
 
                                 <label id="lblSelect">
                                     信用等级：<select class="selectPointOfInterest" id="xydj" title="Select points of interest nearby">
@@ -155,7 +156,7 @@
                                     </select>
                                 </label></br>
                                 <label id="lblSelect">
-                                    证件类型：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                                    证件类型：<select class="selectPointOfInterest" title="Select points of interest nearby" id="zjlx">
                                        <option value="">-----请选择-----</option>
 									   <option value="IDENTIFYID">身份证</option>
 									   <option value="PASSPORT">护照</option>
@@ -164,14 +165,14 @@
                                     </select>
                                 </label></br>
                                 <label>
-                                    证件号码：<input type="text" value="" name="id" placeholder="证件号码*" required />
+                                    证件号码：<input type="text" value="" name="id" placeholder="证件号码*" required id="zjhm" />
                                 </label></br>
                                 <label>
-                                    联系电话：<input type="text" value="" name="name" placeholder="联系电话*" required /> 
-                                </label></br> 
-                                <label> 
-                                     移动电话：<input type="text" value="" name="name" placeholder="移动电话*" required /> 
-                                </label></br>        
+                                    联系电话：<input type="text" value="" name="name" placeholder="联系电话*" required id="lxdh" />
+                                </label></br>
+                                <label>
+                                     移动电话：<input type="text" value="" name="name" placeholder="移动电话*" required id="yddh" />
+                                </label></br>
                             </div>
                         <!-- </form> -->
                     </div>
@@ -180,7 +181,7 @@
                         <!-- <form action="#" method="get"> -->
                             <div class="wrapper-form-div">
                                 <label id="lblSelect">
-                                    产品名称：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                                    产品名称：<select class="selectPointOfInterest" title="Select points of interest nearby" id="cpmc">
                                         <option value="">-----请选择-----</option>
 										<option value="000002">住房按揭贷款</option>
 										<option value="404">短期农业经济组织保证贷款</option>
@@ -199,7 +200,7 @@
                                     机&nbsp构&nbsp名&nbsp：<input type="text" id="jgmc" value="" name="id" placeholder="Q联社，B县社*" required />
                                 </label></br>
                                <label id="lblSelect">
-                                使用币种：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                                使用币种：<select class="selectPointOfInterest" title="Select points of interest nearby" id="sybz">
 										<option value="">-----请选择-----</option>
 										<option value="CNY" selected="">人民币</option>
 										<option value="USD">美元</option>
@@ -208,30 +209,30 @@
                                 </select>
                                 </label></br>
                                 <label>
-                                    贷&nbsp款&nbsp额&nbsp：<input type="text" value="" name="name" placeholder="贷款额(元)*" required />
+                                    贷&nbsp款&nbsp额&nbsp：<input type="text" value="" name="name" placeholder="贷款额(元)*" required id="dkje" />
                                 </label></br>
                                 <label>
-                                    期&nbsp&nbsp&nbsp&nbsp限&nbsp&nbsp：<input type="text" value="" name="id" placeholder="还款期限(月)*" required />
+                                    期&nbsp&nbsp&nbsp&nbsp限&nbsp&nbsp：<input type="text" value="" name="id" placeholder="还款期限(月)*" required id="hkqx" />
                                 </label></br>
                                 <label>
                                     &nbsp起&nbsp息日&nbsp：<input id="meeting" type="date" value="2017-01-13"/>
                                 </label></br>
                             <label id="lblSelect">
-                            利率特性：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                            利率特性：<select class="selectPointOfInterest" title="Select points of interest nearby" id="lvtx">
 										<option value="">-----请选择-----</option>
 										<option value="GDLL">固定利率</option>
 										<option value="FDLL">浮动利率</option>
                                 </select>
                                 </label></br>
                             <label id="lblSelect">
-                            利率调整周期(月)：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                            利率调整周期(月)：<select class="selectPointOfInterest" title="Select points of interest nearby" id="lvtzzq">
 										<option value="">-----请选择-----</option>
 										<option value="1">1M</option>
 										<option value="3">3M</option>
 										<option value="6">6M</option>
 										<option value="12">12M</option>
                                 </select>
-                                </label></br>       
+                                </label></br>
                             </div>
                             <!-- <input type="submit" value="提交" /> -->
                         <!-- </form> -->
@@ -241,7 +242,7 @@
                         <!-- <form action="#" method="get"> -->
                             <div class="wrapper-form-div">
                                 <label id="lblSelect">
-                                还款方式：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                                还款方式：<select class="selectPointOfInterest" title="Select points of interest nearby" id="hkfs">
 										<option value="">-----请选择-----</option>
 										<option value="DEBJ">等额本金</option>
 										<option value="DEBX">等额本息</option>
@@ -251,37 +252,37 @@
                                     </select>
                                     </label></br>
                                 <label id="lblSelect">
-                                还款频率：<select class="selectPointOfInterest" title="Select points of interest nearby">
+                                还款频率：<select class="selectPointOfInterest" title="Select points of interest nearby" id="hkpl">
 										<option value="">-----请选择-----</option>
 										<option value="1">1 月</option>
 										<option value="3">3 月</option>
 										<option value="6">6 月</option>
 										<option value="12">12 月</option>
                                     </select>
-                                    </label></br>       
+                                    </label></br>
                             </div>
                         <!-- </form> -->
                     </div>
                     <div class="wrapper-div-form1">
                         <h2>抵押品信息</h2>
-                        
+
                             <div class="wrapper-form-div">
-                                     
+
                                 <textarea name="message" placeholder="暂无信息*" required ></textarea></br>
-                                <!-- <input type="button" value="新增" class="wrapper-div-form1-btn1" /> --> 
+                                <!-- <input type="button" value="新增" class="wrapper-div-form1-btn1" /> -->
                             </div>
                             <input type="submit" id="grdkSubmit" value="提交" class="wrapper-div-form1-btn1" />
-                        
+
                     </div>
                 </form>
 				</div>
-           
+
             <div class="content-wrapper-loan">
-                
+
             </div>
 
             </section> <!-- #content -->
-                
+
             </section> <!-- #content-wrapper -->
             <div class="wrapper-kong"></div>
     	</section> <!-- #page-wrapper -->
@@ -312,7 +313,7 @@
                         <p>存款定价</p>
                      </a>
                 </li>
-            </ul>   
+            </ul>
         </div>
     </body>
 	<script src="js/cookie.js"></script>
@@ -334,27 +335,30 @@
 
 		$("#grdkSubmit").click(function(){
 			var params = getCommonParams(document.cookie);
-			params.class = "normalLoanPricingCalculateQuery";
+                console.log(params)
+    			params.class = "normalLoanPricingCalculateQuery";
 			params.personal_loan_info = {
-					"custId":"0104754535",						//客户号
-					"custName":"对公测试客户8",				//客户名称
-					"custSex":"5337",							    //性别
-					"custCiLevelCode":"AAA级客户",				//信用评级名称
-					"certificateType":"IDENTIFYID",			//证件类型
-					"certificateNumber":"420199999999999999",	    //证件号码
-					"phone":"15999999999",					//联系电话
-					"telephone":"15999999999",						//移动电话
-					"loanProductCode":"000002",						//产品名称
-					"organization":"86003",						//机构名
-					"loanCurrencyCode":"CNY",							//使用币种
-					"loanMoney":"66666",						//贷款金额
-					"loanTermdetail":"6",						//期限
-					"homeValueDate":"2017-04-10",			//起息日
-					"loanInterestCode":"GDLL",		//利率特性
-					//"interest_rate_adjustment_period":"1",	    //利率调整周期
-					"repaymentTypeCode":"DEBJ",						//还款方式
+					"custId":$("#khh").val(),						//客户号
+					"custName":$("#khmc").val(),				//客户名称
+					"custSex":$('input[name="sex"]:checked').val(),				//性别
+					"custCiLevelCode":$("#xydj option:selected").text(),		//信用评级名称
+					"certificateType":$("#zjlx option:selected").val(),		//证件类型
+					"certificateNumber":$("#zjhm").val(),	    //证件号码
+					"phone":$("#lxdh").val(),					//联系电话
+					"telephone":$("#yddh").val(),
+                    //移动电话
+					"loanProductCode":$("#cpmc option:selected").val(),			//产品名称
+					"organization":$("#jgmc").val(),						//机构名
+					"loanCurrencyCode":$("#sybz option:selected").val(),		//使用币种
+					"loanMoney":$("#dkje").val(),						//贷款金额
+					"loanTermdetail":$("#hkqx").val(),						//期限
+					"homeValueDate":$("#meeting").val(),			//起息日
+					"loanInterestCode":$("#lvtx option:selected").val(),		//利率特性
+					"interest_rate_adjustment_period":$("#lvtzzq option:selected").val(),
+                    //利率调整周期
+					"repaymentTypeCode":$("#hkfs option:selected").val(),		//还款方式
 					"loanTermdetailUnitCode":"M",					//期限单位
-					"repaymentFrequencyCode":"1"						//还款频率
+					"repaymentFrequencyCode":$("#hkpl option:selected").val()	//还款频率
 			}
 			$.ajax({
 				url:port,
@@ -364,7 +368,7 @@
 				success:(r)=>{
 					if (r.status){
 						debugger;
-						//window.location.href = "shisuanjieguo.html?data=" + escape(JSON.stringify(r.result));
+						window.location.href = "persnshisuanjieguo.html?data=" + escape(JSON.stringify(r.result));
 					}else{
 						alert(r.message);
 					}
